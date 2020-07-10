@@ -1,5 +1,4 @@
-class Product{
-
+class Product {
   int id;
   int categoryId;
   String productName;
@@ -7,9 +6,10 @@ class Product{
   double unitPrice;
   int unitsInStock;
 
-  Product(this.id, this.categoryId, this.productName, this.quantityPerUnit, this.unitPrice, this.unitsInStock);
+  Product(this.id, this.categoryId, this.productName, this.quantityPerUnit,
+      this.unitPrice, this.unitsInStock);
 
-  Product.fromJson(Map json){
+  Product.fromJson(Map json) {
     id = json["id"];
     categoryId = json["categoryId"];
     productName = json["productName"];
